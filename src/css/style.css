@@ -7,15 +7,22 @@
 #root{
    display: flex;
    justify-content:center;
+   width: 100%;
 }
 
 .App{
-   width: 800px;
+   width: 100%;
+   padding: 30px;
+}
+
+p{
+   margin: 15px;
 }
 
 .post{
    display: flex;
    padding: 15px;
+   width: 100%;
    border: 2px solid teal;
    margin-top: 15px;
    justify-content: space-between;
@@ -27,4 +34,81 @@ h1{
 
 .done{
    text-decoration: line-through;
+}
+.foto {
+   width: 200px;
+}
+
+body{
+   background-color: #1F1F1F;
+   color: white;
+}
+
+
+
+.post_img{
+   display: flex; flex-direction: column;
+}
+
+#amIFan{
+   margin-bottom: 5px;
+}
+.active{
+   display: block;
+}
+
+.nonActive{
+   display: none;
+}
+.logo{
+   display: block;
+   border-radius: 50%;
+   width: 80px;
+   height: 80px;
+}
+
+.header{
+}
+.header_main{
+   padding: 12px;
+
+}
+.header_top{
+   display: flex;
+   justify-content: space-between; 
+}
+.header_bottom{
+   display: flex;
+   justify-content: center;
+}
+.nav_list{
+   display: flex;
+}
+.search{
+   width: 150px;
+   height: 30px;
+   background-color: rgb(31, 30, 30);
+   color: #fff;
+   border: none;
+   padding-left: 5px;
+}
+
+.ico{
+   width: 30px;
+   color: #fff;
+   margin-right: 12px;
+}
+.character{
+   display: flex;
+   width: 100%;
+   height: 300px;
+   background-color: black;
+   margin-top: 15px;
+   justify-content: space-between;
+   padding: 20px;
+}
+
+.characterFoto{
+   width: 200px;
+   height: auto;
 }

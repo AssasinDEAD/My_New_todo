@@ -3,22 +3,31 @@ import MyInpute from "../UI/inpute/MyInpute";
 import MySelect from "../UI/select/MySelect";
 
 
-const PostFilter = ({ filter, setFilter }) => {
+const PostFilter = ({ filter, setFilter }, props) => {
+
+   function test() {
+   }
    return (
       <div>
+
          <MySelect
-            value={filter.sort}
-            onChange={selectedSort => setFilter({ ...filter, sort: selectedSort })}
-            defaultValue="Сортировка по"
+            onChange={e => {
+               if (true) {
+                  console.log(e.target.value)
+               }
+            }}
             options={[
-               { value: "title", name: "Поиск" }
+               { value: "title", name: "все" },
+               { value: "status", name: "Корабль" },
+               { value: "status", name: "Персонаж" },
+               { value: "status", name: "Планета" },
             ]}
          />
+
          <MyInpute
             placeholder="Search"
             onChange={e => setFilter({ ...filter, query: e.target.value })}
             value={filter.query}
-
          />
       </div>
    )
